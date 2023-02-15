@@ -43,10 +43,10 @@ class DetailViewController: UIViewController {
     }
     
     @objc func share() {
-            var massiv = [Any]()
+            var masiv = [Any]()
             let list = shareList.joined(separator: "\n")
-            massiv.append(list)
-            let vc = UIActivityViewController(activityItems: massiv, applicationActivities: [])
+            masiv.append(list)
+            let vc = UIActivityViewController(activityItems: masiv, applicationActivities: [])
             vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
             present(vc, animated: true)
     }
